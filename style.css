@@ -1,0 +1,101 @@
+:root {
+    --color-red:brown;
+    --color-black: black;
+    --color-black2:rgba(33, 30, 30, 0.885);
+    --color-white: white;
+}
+main{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    width:100%;
+    height:100%;
+    justify-content: center;
+    align-items: center;  
+    margin-top: 3%;   
+}
+
+#container-calc {
+    display:flex;
+    background-color: brown;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 400px;
+    height: 600px;
+    border-radius: 15px;
+    flex-direction: column;  
+}
+
+.title-calc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    font-size: 2rem;
+    border-bottom:solid 10px var(--color-black);
+    margin-bottom: 10px;       
+    user-select: none;
+    cursor: pointer;  
+    transition: .6s;
+}
+.title-calc:hover{    
+    font-size: 2.5rem;
+}
+
+.container-input{
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.container-input input{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    outline: 0;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+button {
+    width: 75%;
+    height: 8%;
+    background: var(--color-black);
+    color: var(--color-white);
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: .4s;
+}
+
+button:hover{    
+    font-size: 1rem;
+    background-color: var(--color-black2);
+}
+
+.result {
+    background-color: var(--color-black);
+    display: block;
+    margin-top: 20px;
+    align-items: center;
+    width: 75%;
+    height: 20%;
+    border-radius: 10px;
+    color: var(--color-white);
+    padding-bottom: 200px;
+    color: var(--color-red);
+    text-align: center;
+    padding:20px;
+   
+}
+    /*Retirar setas campo number */
+input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
